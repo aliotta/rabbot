@@ -6,7 +6,9 @@
   "repository": "https://github.com/arobson/rabbot",
   "scripts": {
     "lint": "jshint ./",
-    "test": "gulp test"
+    "test": "gulp test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -85,6 +87,8 @@
     "node-uuid": "^1.4.7",
     "postal": "^1.0.8",
     "when": "^3.7.5",
-    "whistlepunk": "^0.3.2"
-  }
+    "whistlepunk": "^0.3.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
